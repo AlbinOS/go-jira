@@ -81,7 +81,7 @@ type ProjectComponent struct {
 	ProjectID           int    `json:"projectId" structs:"projectId,omitempty"`
 }
 
-// GetList gets all projects form JIRA
+// GetList gets all projects from JIRA
 //
 // JIRA API docs: https://docs.atlassian.com/jira/REST/latest/#api/2/project-getAllProjects
 func (s *ProjectService) GetList() (*ProjectList, *Response, error) {
